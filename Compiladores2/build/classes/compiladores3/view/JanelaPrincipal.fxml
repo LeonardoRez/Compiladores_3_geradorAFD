@@ -19,10 +19,12 @@
                <children>
                   <TextField fx:id="tfInfixa" layoutX="71.0" layoutY="31.0" prefHeight="25.0" prefWidth="555.0" />
                   <TextField fx:id="tfPosfixa" layoutX="71.0" layoutY="64.0" prefHeight="25.0" prefWidth="555.0" />
-                  <Button fx:id="gerar" layoutX="663.0" layoutY="31.0" mnemonicParsing="false" onAction="#gerar" prefHeight="58.0" prefWidth="103.0" text="Thompson" />
+                  <Button fx:id="gerar" layoutX="632.0" layoutY="31.0" mnemonicParsing="false" onAction="#gerar" prefHeight="58.0" prefWidth="47.0" text="AFN" />
                   <Label layoutX="24.0" layoutY="35.0" prefHeight="17.0" prefWidth="31.0" text="Infixa" />
                   <Label layoutX="16.0" layoutY="68.0" prefHeight="17.0" prefWidth="47.0" text="Posfixa" />
                   <Label fx:id="log" layoutX="19.0" layoutY="97.0" prefHeight="17.0" prefWidth="745.0" textFill="#e40000" />
+                  <Button layoutX="692.0" layoutY="31.0" mnemonicParsing="false" onAction="#gerarAFD" prefHeight="25.0" prefWidth="82.0" text="AFD" />
+                  <Button layoutX="692.0" layoutY="64.0" mnemonicParsing="false" onAction="#fechosE" prefHeight="25.0" prefWidth="82.0" text="Fecho-e" />
                </children>
             </AnchorPane>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">

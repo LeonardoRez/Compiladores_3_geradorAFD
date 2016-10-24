@@ -118,9 +118,18 @@ public class AutomatoThomp {
         return true;
     }
 
+    private Estado getEstado(ArrayList<EstadoTemp> a, Estado e) {
+        for (EstadoTemp q : a) {
+            if (q.e.ID == e.ID) {
+                return q.e;
+            }
+        }
+        return null;
+    }
+
     public AFD transformaAFD() {
         ArrayList<EstadoTemp> listaNova = new ArrayList<>();
-        
+
         listaNova.add(new EstadoTemp(getFeicho(q0)));
         int i = 0;
         while (i < listaNova.size()) {
@@ -133,8 +142,10 @@ public class AutomatoThomp {
                 EstadoTemp e = new EstadoTemp(aux);
                 if (listaNovaNAOContem(listaNova, e.e)) {
                     listaNova.add(e);
+                    atual.e.addTransicao(s.getSimbolo(), e.e);
+                } else {
+                    atual.e.addTransicao(s.getSimbolo(), getEstado(listaNova, e.e));
                 }
-                atual.e.addTransicao(s.getSimbolo(), e.e);
             }
 
             i++;
@@ -152,13 +163,14 @@ public class AutomatoThomp {
     }
 
     public static void main(String[] args) {
-        Conversor c = new Conversor();
-        AutomatoThomp a = c.calcAutomato(c.converter("a+b*"));
-        AFD teste = a.transformaAFD();
-        teste.renomear();
-        for (Estado e : teste.Q) {
-            System.out.println(e);
-        }
+//        Conversor c = new Conversor();
+//        AutomatoThomp a = c.calcAutomato(c.converter("a+b*"));
+//        AFD teste = a.transformaAFD();
+//        teste.renomear();
+//        for (Estado e : teste.Q) {
+//            System.out.println(e);
+//        }
+        int i = Integer.parseInt("4789101213");
 
     }
 }

@@ -2,6 +2,11 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/C:/Users/Leonardo/Desktop/Repositórios/Compiladores_3_geradorAFD/Compiladores2/src/compiladores3/model/AutomatoThomp.java</file>
+            <file>file:/C:/Users/Leonardo/Desktop/Repositórios/Compiladores_3_geradorAFD/Compiladores2/src/compiladores3/model/Estado.java</file>
+            <file>file:/C:/Users/Leonardo/Desktop/Repositórios/Compiladores_3_geradorAFD/Compiladores2/src/compiladores3/controller/GeradorThompson.java</file>
+            <file>file:/C:/Users/Leonardo/Desktop/Repositórios/Compiladores_3_geradorAFD/Compiladores2/src/compiladores3/controller/Conversor.java</file>
+        </group>
     </open-files>
 </project-private>

@@ -8,7 +8,7 @@
   </information>
   <resources>
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
-    <jar href="Compiladores3.jar" size="22956" download="eager" />
+    <jar href="Compiladores3.jar" size="24061" download="eager" />
   </resources>
   <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="Compiladores3" >
     <param name="requiredFXVersion" value="8.0+"/>
